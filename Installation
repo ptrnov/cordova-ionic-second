@@ -1,0 +1,108 @@
+```
+Author By : ptr.nov
+Since	  : 03/20/2017
+Title	  : Installation Mobile. 
+
+
+A. JAVA INSTALL AND SETTING 
+  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  Control Panel\System and Security\System -> ENVIRONMENT VARIABLE
+  
+   Java SE Development Kit 8u102 - jdk-8u102-windows-x64.exe
+  -System variable
+   JDK_HOME
+	C:\Program Files\Java\jdk1.8.0_102
+   JRE_HOME
+	C:\Program Files\Java\jre1.8.0_102
+   Path
+	C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JDK_HOME%\bin;%JRE_HOME%\bin;
+	atau
+        C:\ProgramData\Oracle\Java\javapath;%JDK_HOME%\bin;%JRE_HOME%\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\nodejs\;C:\Program Files\PuTTY\
+   
+   TEST CMD prom:
+   c:\user\userlogin>
+   c:\user\userlogin>javac
+   if show parameter -> success config
+
+B. NOTE JS INSTALL /NPM 
+  https://nodejs.org/en/  
+  LTS
+  Control Panel\System and Security\System -> ENVIRONMENT VARIABLE
+  user variable
+  PATH
+  	C:\Users\Lukison - NB1\AppData\Roaming\npm 
+	atau user administrator
+	C:\Users\Administrator\AppData\Roaming\npm
+
+  path
+  C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JDK_HOME%\bin;%JRE_HOME%\bin;C:\Program Files\nodejs\;
+
+  Open nodejs commnd from.
+  a.install bower via NPM
+     npm install -g bower
+  b.install cordova via NPM.
+     npm install -g cordova
+  c. Install Ionic framework
+     npm install -g ionic
+
+  Setelah di install : berikut path
+   C:\Users\Administrator\AppData\Roaming\npm\node_modules\Bower
+   C:\Users\Administrator\AppData\Roaming\npm\node_modules\cordova
+
+C. RENAME AND COPY apache-ant
+   rename folder apache-ant-1.9.6-bin to apache-ant
+   copy apache-ant to C:\Program Files\
+   Control Panel\System and Security\System -> ENVIRONMENT VARIABLE
+   -System variable
+   Path 
+   	C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JDK_HOME%\bin;%JRE_HOME%\bin;C:\Program Files\nodejs\;C:\Program Files\apache-ant\bin;
+
+D.INSTALL ANDROID SDK
+  https://developer.android.com/studio/index.html#downloads
+  installer_r24.4.1-windows
+  Control Panel\System and Security\System -> ENVIRONMENT VARIABLE
+  -System variable 
+  Path 
+	C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%JDK_HOME%\bin;%JRE_HOME%\bin;C:\Program Files\nodejs\;C:\Program Files\apache-ant\bin;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
+  ANDROID_HOME
+	D:\AndroidSDK
+
+
+E. INSTALL GENYMOTION & Virtual Box
+https://www.genymotion.com/download/
+
+F. INSTALL Eclipse
+
+G. Install Xampp, develope mengunakan browser.
+
+H. COMPAILE 
+   put data htdoct\folder to cordova folder project.
+
+
+===== Open nodejs commnd from ==========
+
+#new project ionic.
+ionic start nmproject blank
+
+#RUN BROWSER.
+ionic serve.
+
+#Compile:
+ionic build android
+
+#Configure Platforms
+$ ionic platform add ios
+$ ionic platform add android
+
+#Just to make sure the default project worked, try building and running the project (substitute ios for android to build for Android instead):
+$ ionic build ios
+$ ionic emulate ios
+
+#Plugin ionic
+ionic plugin list
+
+ionic plugin rm cordova-plugin-file
+
+ionic plugin add cordova-plugin-file -- save
+
+```
